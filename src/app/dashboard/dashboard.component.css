@@ -1,0 +1,81 @@
+.list_data {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  justify-content: space-between;
+}
+.total_users,
+.total_todos,
+.total_posts,
+.total_albums {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+  width: 23%;
+  border-radius: 3px;
+  box-shadow: 1px 4px 0 rgba(0, 0, 0, 0.14);
+  padding: 30px;
+}
+
+.total_users svg,
+.total_todos svg,
+.total_posts svg,
+.total_albums svg {
+  color: white;
+  border-radius: 5px;
+}
+
+.total_users {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
+    0 7px 10px -5px rgba(255, 152, 0, 0.4);
+  background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+.total_todos {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
+    0 7px 10px -5px rgba(233, 30, 99, 0.4);
+  background: linear-gradient(60deg, #ec407a, #d81b60);
+}
+.total_posts {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
+    0 7px 10px -5px rgba(76, 175, 80, 0.4);
+  background: linear-gradient(60deg, #66bb6a, #43a047);
+}
+.total_albums {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
+    0 7px 10px -5px rgba(0, 188, 212, 0.4);
+  background: linear-gradient(60deg, #26c6da, #00acc1);
+}
+
+.total_content {
+  text-align: center;
+  font-size: 20px;
+}
+
+.total_content div:first-child {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.box_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list_todos {
+  width: 60%;
+}
+
+.list_todos th {
+  text-align: center;
+}
+
+.list_todos td:nth-child(1),
+.list_todos td:last-child {
+  text-align: center;
+}
+
+.list_images {
+  width: 38%;
+}

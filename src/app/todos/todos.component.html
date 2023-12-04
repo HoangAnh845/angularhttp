@@ -1,0 +1,41 @@
+<div class="card list_todos">
+  <p-table
+    [value]="todosData"
+    styleClass="p-datatable-striped"
+    [paginator]="true"
+    [rows]="5"
+    [tableStyle]="{ 'min-width': '50rem' }"
+    paginatorLocale="fa-IR"
+  >
+    <ng-template pTemplate="header">
+      <tr>
+        <th style="width: 5%">STT</th>
+        <th style="width: 15%">User</th>
+        <th style="width: 25%">Todo</th>
+        <th style="width: 10%">State</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-todosData>
+      <tr>
+        <td>{{ todosData.id }}</td>
+        <td>{{ todosData.userId }}</td>
+        <td>{{ todosData.title }}</td>
+        <td>{{ todosData.completed }}</td>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="paginatorleft">
+      <p-button
+        type="button"
+        icon="pi pi-plus"
+        styleClass="p-button-text"
+      ></p-button>
+    </ng-template>
+    <ng-template pTemplate="paginatorright">
+      <p-button
+        type="button"
+        icon="pi pi-cloud"
+        styleClass="p-button-text"
+      ></p-button>
+    </ng-template>
+  </p-table>
+</div>

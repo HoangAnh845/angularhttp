@@ -1,0 +1,35 @@
+/* styles.css or styles.scss */
+.rows {
+  display: flex;
+}
+
+.col-left {
+  position: relative;
+  width: 260px;
+  height: 100vh;
+  background-color: #e53835b9;
+  padding: 10px;
+}
+
+.img_sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url("../assets/img/sidebar.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.col-right {
+  padding: 15px;
+  width: calc(100% - 260px);
+  background-color: #eeeeee;
+}
+
+.wap-content {
+  padding-top: 25px;
+}

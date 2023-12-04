@@ -1,0 +1,90 @@
+.sidebar_logo {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar_logo div {
+  margin-left: 10px;
+  margin-top: 2px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+
+.wrapper_sidebar_user {
+  border-top: 1px solid #ffffff6e;
+  margin: 15px 0px;
+  padding: 15px 5px;
+  color: white;
+}
+
+.sidebar_user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-bottom: 15px; */
+}
+
+.sidebar_user .user_avater {
+  border-radius: 50%;
+}
+
+.sidebar_user .user_name {
+  font-size: 17px;
+}
+
+.sidebar_user .user_info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wap_option {
+  height: fit-content;
+  overflow: hidden;
+  border-bottom: 1px solid #ffffff6e;
+  padding-bottom: 15px;
+}
+
+.user_option {
+  margin-top: 20px;
+  position: relative;
+}
+
+.user_option > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.user_option > div div:first-child {
+  width: 18%;
+}
+
+.user_option > div:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.list_nav > a {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.list_nav > a:hover,
+.active-link {
+  background-color: white;
+  color: #333 !important;
+}
